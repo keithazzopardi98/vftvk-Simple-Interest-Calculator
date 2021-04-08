@@ -7,7 +7,7 @@ function compute()
     var years = parseInt(document.getElementById("years").value);
 
     //validating the principal value
-    if (principal <= 0) {
+    if (isNaN(principal) || principal <= 0) {
         alert("Enter a positive number");
         principal_elem.focus()
         return;
